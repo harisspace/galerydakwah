@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: .3s;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.is-white {
+    color: white;
+}
+
+.is-black {
+    color: #1E1D1D;
+}
+
+.wrapper {
+    width: calc(1362/1440 * 100%);
+    margin: auto;
+    overflow-x: hidden;
+}
+
+/* navbar */
+nav {
+    width: 100%;
+    height: 124px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.nav-brand {
+    width: 40%;
+    padding: 40px 5px;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.nav-list {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.nav-list a:hover::after {
+    content: '';
+    display: block;
+    width: 50%;
+    padding-bottom: 5px;
+    border-bottom: 3px solid royalblue;
+    margin-bottom: -8px !important;
+    margin: auto;
+}
+
+
+/* main */
+
+.main {
+    background: url(../img/mosque.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.fade {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+}
+
+/* aside */
+aside {
+    margin-top: 100px;
+}
+
+aside p:nth-child(1) {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+aside p:nth-child(2) {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+aside p:nth-child(3) {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+/* animation */
+p.desk-only {
+    animation: movement 2s ease-in-out infinite forwards alternate;
+}
+
+@keyframes movement {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-80px);
+    }
+}
+
+
+
+/* utility */
+@media screen and (max-width: 768px) {
+    .nav-list a {
+        font-size: 1rem;
+        width: 70%;
+    }
+
+    .nav-brand {
+        font-size: 1.5rem;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-list {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        position: absolute;
+        top: 124px;
+        width: calc(1362/1440 * 100%);
+        height: 50%;
+        left: -100%;
+        background-color: #1E1D1D;
+        z-index: 9999;
+    }
+
+    ul.show {
+        left: 2.5%;
+    }
+
+    span.animate1 {
+        transform-origin: 0 0;
+        transform: rotate(45deg);
+    }
+
+    span.animate2 {
+        width: 0 !important;
+        transition: .1s;
+    }
+
+    span.animate3 {
+        transform-origin: 0 0;
+        transform: rotate(-45deg) translateY(-4px);
+    }
+
+    .nav-brand {
+        font-size: 1.8rem;
+        width: 60%;
+    }
+
+    .hamburger-menu {
+        width: 30px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        right: 20px;
+        top: 48px;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .hamburger-menu span {
+        display: inline-block;
+        background-color: white;
+        width: 85%;
+        height: 3px;
+    }
+
+    /* aside */
+    aside p:nth-child(1) {
+        font-size: 1.8rem;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+    aside p:nth-child(2) {
+        font-size: 1.8rem;
+        font-weight: lighter;
+        letter-spacing: 2px;
+    }
+
+    aside p:nth-child(3) {
+        margin-top: 40px;
+        font-size: 1rem;
+        font-weight: 100;
+        letter-spacing: 3px;
+    }
+
+
+}

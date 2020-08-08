@@ -1,0 +1,9 @@
+RewriteEngine on
+ 
+RewriteCond %{HTTP_HOST} ^galerydakwah.xyz$ [NC,OR]
+ 
+RewriteCond %{HTTP_HOST} ^www.galerydakwah.xyz$
+ 
+RewriteCond %{REQUEST_URI} !public/
+ 
+RewriteRule (.*) /public/$1 [L]

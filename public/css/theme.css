@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: .3s;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.is-white {
+    color: white;
+}
+
+.is-black {
+    color: #1E1D1D;
+}
+
+.wrapper {
+    width: calc(1362/1440 * 100%);
+    margin: auto;
+}
+
+/* navbar */
+.nav {
+    width: 100%;
+    height: 124px;
+    margin: auto;
+    margin-bottom: 40px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: flex-start;
+    background-color: #f3f3f3;
+    box-shadow: 6px 7px 20px rgba(0, 0, 0, 0.25),
+        -8px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.nav-brand {
+    width: 40%;
+    padding: 40px 5px;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.nav-list {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.nav-list a:hover::after {
+    content: '';
+    display: block;
+    width: 50%;
+    padding-bottom: 5px;
+    border-bottom: 3px solid royalblue;
+    margin-bottom: -8px !important;
+    margin: auto;
+}
+
+
+/* cards */
+.cards {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.card {
+    width: 30%;
+    margin: 1.5%;
+    box-shadow: -4px 6px 8px #EEEEEE,
+        4px 0px 20px #EEEEEE;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+    transform: translateY(10%);
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.card:hover {
+    background-color: #f3f1f1;
+}
+
+.cover {
+    width: 80%;
+    height: 225px;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.desc {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+
+
+.card.appear {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+/* track */
+.track {
+    width: calc(1362/1440 * 100%);
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.track h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.track p {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.track-video {
+    width: 60%;
+    height: 4.3rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: -4px 6px 8px #EEEEEE,
+        4px 0px 20px #EEEEEE;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.track-video:hover {
+    background: #f3f1f1;
+}
+
+
+
+/* iframe */
+.videoWrapper {
+    position: relative;
+    width: 720px;
+    height: 480px;
+    margin: auto;
+    margin-bottom: 60px;
+    box-shadow: -4px 6px 40px #f3ffbd,
+        4px 0px 20px #f3ffc0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.channel-inform {
+    position: absolute;
+    bottom: -40px;
+}
+
+
+
+/* about */
+.container-about {
+    width: calc(700/1440 * 100%);
+    margin: auto;
+    margin-bottom: 80px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.container-about h3 {
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+}
+
+.container-about p {
+    letter-spacing: 1px;
+    /* word-break: break-all; */
+}
+
+.galery {
+    padding-bottom: 50px;
+    margin: auto;
+    width: calc(700/1440 * 100%);
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.galery p {
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.img-gal {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.img-gal:hover {
+    transform: scale(1.2);
+}
+
+.thanks {
+    width: calc(700/1440 * 100%);
+    margin: auto;
+    margin-bottom: 200px;
+}
+
+.galery-img {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+
+/* footer */
+.footer {
+    width: calc(1362/1440 * 100%);
+    margin: auto;
+    background-color: #f3f3f3;
+    box-shadow: -3px -1px 20px rgba(0, 0, 0, 0.25),
+        2px 4px 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.moto {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.hadist {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.riwayat {
+    align-self: flex-end;
+    margin-right: 30px;
+}
+
+.style {
+    text-align: center;
+    font-size: .9rem;
+}
+
+
+
+
+/* modal box */
+.tambah {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+    font-size: .9rem;
+    font-weight: 400;
+    background-color: lightblue;
+    border: 2px solid rgb(148, 212, 233);
+    cursor: pointer;
+}
+
+.tambah:hover {
+    background-color: rgb(47, 109, 167);
+}
+
+.tambah:active {
+    background-color: rgb(59, 59, 59);
+}
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, .4);
+    z-index: 1;
+}
+
+.modal-content {
+    z-index: 2;
+    position: relative;
+    width: 80%;
+    background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    margin: 15% auto;
+    padding: 20px 0;
+    animation: showdown 1s;
+}
+
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(165, 0, 0);
+    font-weight: 600;
+}
+
+.close:hover {
+    color: rgb(255, 5, 5);
+}
+
+.modal-content input, .modal-content select, .modal-content label {
+    width: 70%;
+    margin: auto;
+}
+
+.modal-content input,
+.modal-content select {
+    height: 40px;
+}
+
+#tambah {
+width: 70px;
+height: 30px;
+margin-top: 20px !important;
+margin: auto;
+    font-size: .9rem;
+    font-weight: 400;
+    background-color: lightblue;
+    border: 2px solid rgb(148, 212, 233);
+    cursor: pointer;
+}
+
+.tambah:hover {
+    background-color: rgb(47, 109, 167);
+}
+
+.tambah:active {
+    background-color: rgb(59, 59, 59);
+}
+
+@keyframes showdown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* login form */
+.login-div1 {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    background: #ecf0f3;
+}
+
+.login-div2 {
+    width: 30%;
+    height: 80%;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #FFFFFF;
+}
+
+.login-logo {
+    text-align: center;
+    font-size: 28px;
+    padding-top: 24px;
+    letter-spacing: .5px;
+    color: #555;
+}
+
+.login-form {
+    width: 100%;
+    padding: 75px 5px 5px 5px;
+}
+
+.login-form input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding: 20px 10px 20px 5px;
+}
+
+.username, .password {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+}
+
+.btn-login {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    background: #24cfaa;
+    box-shadow: 3px 3px 8px #b1b1b1,
+                -3px -3px 8px #ffffff;
+    transition: 0.5s;
+}
+
+.btn-login:hover {
+    background: #2fdbb6;
+}
+
+.btn-login:active {
+    background: #1da88a;
+}
+
+
+
+
+/* progressbar */
+.progressbar {
+    width: calc(1362/1440 * 100%);
+    margin: auto;
+    margin-bottom: 40px;
+    border: 1px solid rgb(162, 231, 173);
+      border-radius: 30px;
+}
+
+.myprogress {
+    width: 0%;
+    border-radius: 30px;
+    background-color: rgb(89, 228, 112);
+}
+
+.myprogress p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+/* utility */
+@media screen and (max-width: 768px) {
+    .nav-list a {
+        font-size: 1rem;
+        width: 70%;
+    }
+
+    .nav-brand {
+        font-size: 1.5rem;
+        width: 30%;
+    }
+
+    .cards {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: none;
+        width: 45%;
+    }
+
+    .cover {
+        height: 180px;
+    }
+
+    /* footer */
+    .style {
+        font-size: .8rem;
+    }
+
+    .hadist {
+        font-size: .9rem;
+    }
+
+    .riwayat {
+        font-size: .9rem;
+    }
+
+    .videoWrapper {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-list {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        position: absolute;
+        top: 124px;
+        width: calc(1362/1440 * 100%);
+        height: 50%;
+        left: -100%;
+        background-color: #f8f8f8;
+        z-index: 9999;
+    }
+
+    ul.show {
+        left: 2.5%;
+    }
+
+    span.animate1 {
+        transform-origin: 0 0;
+        transform: rotate(45deg);
+    }
+
+    span.animate2 {
+        width: 0 !important;
+        transition: 0.01s;
+    }
+
+    span.animate3 {
+        transform-origin: 0 0;
+        transform: rotate(-45deg) translateY(-4px);
+    }
+
+    .nav-brand {
+        font-size: 1.8rem;
+        width: 60%;
+    }
+
+    .hamburger-menu {
+        width: 30px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        right: 20px;
+        top: 48px;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .hamburger-menu span {
+        display: inline-block;
+        background-color: #1E1D1D;
+        width: 85%;
+        height: 3px;
+    }
+
+    /* cards */
+    .cards {
+        justify-content: space-between;
+    }
+
+    .card {
+        flex: none;
+        width: 100%;
+    }
+
+
+    /* track */
+    .track-video {
+        width: 90%;
+        font-size: .7rem;
+        height: 3.4rem;
+    }
+
+    /* footer */
+    .hadist, .riwayat {
+        font-size: .7rem;
+    }
+
+    .copyright, .moto {
+        font-size: .8rem;
+    }
+
+    .style {
+        font-size: .5rem;
+    }
+
+    /* video */
+    .videoWrapper {
+        width: 100%;
+        height: 200px;
+    }
+
+    .channel-inform {
+        font-size: .7rem;
+    }
+
+    .container-about {
+        width: calc(1000/1440 * 100%);
+    }
+
+    .galery {
+        width: calc(1000/1440 * 100%);
+    }
+
+    /* about */
+    .container-about {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 100px;
+    }
+
+    .galery {
+        width: 100%;
+    }
+
+    .galery-img a img {
+        width: 80%;
+        height: 150px;
+    }
+
+    .login-div2 {
+        width: 90%;
+    }
+
+    .track h2 {
+    font-size: 1.4rem;
+    }
+
+    .track p {
+        font-size: .8rem;
+    }
+}
