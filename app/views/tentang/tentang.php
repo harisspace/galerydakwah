@@ -14,6 +14,8 @@
         <a href="https://www.flaticon.com/authors/freepik"><img src="<?= BASEURL; ?>/img/hexagon.png" class="img-gal" alt="favicon"></a>
         <a href="https://pngtree.com/so/emoji-icons"><img src="<?= BASEURL; ?>/img/omb.png" class="img-gal" alt="omb"></a>
         <a href="https://pngtree.com/so/time"><img src="<?= BASEURL; ?>/img/renungan.png" class="img-gal" alt="remember"></a>
+        <a href="https://pngtree.com/so/illustration"><img src="<?= BASEURL; ?>/img/sholat.png" class="img-gal" alt="sholat"></a>
+        <a href="https://pngtree.com/so/light-bulb"><img src="<?= BASEURL; ?>/img/kisahInspiratif.png" class="img-gal" alt="kisah inspiratif"></a>
     </div>
 </div>
 <div class="thanks">
