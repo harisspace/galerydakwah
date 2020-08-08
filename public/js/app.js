@@ -1,5 +1,4 @@
 // handle hamburger menu
-// wakwaw
 const check = document.querySelector('div.hamburger-menu');
 const ul = document.querySelector('.nav-list');
 const span1 = document.getElementById('span1');
