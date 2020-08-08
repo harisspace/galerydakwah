@@ -3,7 +3,7 @@
 class KisahInspiratif_model
 {
     private $db;
-    private $table = 'kisahInspiratif';
+    private $table = 'kisahinspiratif';
 
     public function __construct()
     {
