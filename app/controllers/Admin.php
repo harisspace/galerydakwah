@@ -74,6 +74,24 @@ class Admin extends Controller {
         $this->view('admin/footer');
     }
 
+    public function kisahInspiratif()
+    {
+        $this->session();
+        $data['videos'] = $this->model('KisahInspiratif_model')->getAllKisahInspiratif();
+        $this->view('admin/header');
+        $this->view('admin/kisahInspiratifA', $data);
+        $this->view('admin/footer');
+    }
+
+    public function sholat()
+    {
+        $this->session();
+        $data['videos'] = $this->model('Sholat_model')->getAllSholat();
+        $this->view('admin/header');
+        $this->view('admin/sholatA', $data);
+        $this->view('admin/footer');
+    }
+
     public function login() {
         if(isset($_SESSION['login'])) {
             header('Location: ' . BASEURL . '/admin');

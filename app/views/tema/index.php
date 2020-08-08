@@ -21,5 +21,19 @@
         <p class="desc is-black">Salah satu tren durasi video saat ini, kita akan melihat video singkat yang tentunya sangat bermakna
         </p>
     </a>
+
+    <a href="<?= BASEURL; ?>/sholat" class="card">
+        <img class="cover" data-src="<?= BASEURL; ?>/img/sholat.png" src="" alt="sholat">
+        <h3 class="card-title is-black">Sholat dan Keutamaannya</h3>
+        <p class="desc is-black">Dengan mengetahui keutamaan sholat insyaAllah akan membuat kita lebih bersemangat dalam menjalankannya
+        </p>
+    </a>
+
+    <a href="<?= BASEURL; ?>/kisahInspiratif" class="card">
+        <img class="cover" data-src="<?= BASEURL; ?>/img/kisahInspiratif.png" src="" alt="kisah inspiratif">
+        <h3 class="card-title is-black">Kisah Inspiratif</h3>
+        <p class="desc is-black">Berikut kisah-kisah yang sangat menginspirasi kita dalam hidup agar lebih baik lagi
+        </p>
+    </a>
 </div>
 </div>
